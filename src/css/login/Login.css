@@ -17,17 +17,8 @@
   font-size: 38px;
   line-height: 50px;
   color: #282828;
-}
-
-.login-input-container input {
-  width: 430px;
-  height: 51px;
-  background: #ffffff;
-  border: 1px solid #d9d9d9;
-  border-radius: 5px;
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  padding: 13px 17px;
+  margin: 0;
+  margin-bottom: 50px;
 }
 
 .find-id-pwd {
@@ -39,26 +30,6 @@
   font-size: 14px;
   line-height: 22px;
   color: #6f6f6f;
-}
-
-.login-btn {
-  width: 430px;
-  height: 50px;
-  box-sizing: border-box;
-  background: #e9e9e9;
-  border: none;
-  border-radius: 5px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 28px;
-  text-align: center;
-  color: #c0c0c0;
-  margin-bottom: 20px;
-}
-
-.login-active {
-  background: #ffc400;
-  color: #ffffff;
 }
 
 .go-join span,

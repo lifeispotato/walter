@@ -1,3 +1,48 @@
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: unset;
+}
+
+input::-webkit-inner-spin-button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.walter-input {
+  width: 430px;
+  height: 51px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 13px 17px;
+}
+
+.walter-btn {
+  width: 430px;
+  height: 50px;
+  box-sizing: border-box;
+  background: #e9e9e9;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #c0c0c0;
+  margin-bottom: 20px;
+}
+
+.walter-btn-active {
+  background: #ffc400;
+  color: #ffffff;
+}
+
 input:focus {
   outline: 1px solid #383838;
   color: #282828;
@@ -14,4 +59,18 @@ input::placeholder {
 
 .divider {
   color: #e9e9e9 !important;
+}
+
+.input-error {
+  outline: 1px solid #ff3124;
+}
+
+.input-err-msg {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ff3124;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }

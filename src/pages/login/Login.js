@@ -37,6 +37,7 @@ const Login = () => {
         <h1>로그인</h1>
         <div className="login-input-container">
           <input
+            className="walter-input"
             type="text"
             required
             placeholder="아이디를 입력하세요."
@@ -49,6 +50,7 @@ const Login = () => {
             }}
           />
           <input
+            className="walter-input"
             type="password"
             required
             placeholder="비밀번호를 입력하세요."
@@ -67,8 +69,8 @@ const Login = () => {
           <span className="cursor-pointer">비밀번호찾기</span>
         </div>
         <button
-          className={`login-btn ${
-            loginInfo.id && loginInfo.password ? "login-active" : null
+          className={`walter-btn ${
+            loginInfo.id && loginInfo.password ? "walter-btn-active" : null
           }`}
           onClick={login}
         >
@@ -79,8 +81,16 @@ const Login = () => {
           <u>회원가입하기</u>
         </div>
       </div>
+
+      {/* 1이면 기업계정
+      2면 개발자계정 */}
       {isOpen ? (
-        <Popup type={"alert"} isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Popup
+          memberType={1}
+          type={"confirm"}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
       ) : null}
     </div>
   );

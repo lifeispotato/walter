@@ -80,7 +80,7 @@ const Join = () => {
         </div>
       </div>
       {isOpen ? (
-        <Popup type={"alert"} isOpen={isOpen} setIsOpen={setIsOpen} />
+        <Popup type={"confirm"} isOpen={isOpen} setIsOpen={setIsOpen} />
       ) : null}
     </div>
   );

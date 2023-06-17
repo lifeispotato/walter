@@ -2,10 +2,18 @@ import React, { useEffect, useState } from "react";
 import "../css/popup/Popup.css";
 
 const Popup = (props) => {
+  useEffect(() => {
+    console.log(props.type);
+  }, []);
+
   return (
     <div className="popup-container">
       <div className="popup-wrap">
-        <span className="popup-info">정보가 일치하지 않습니다.</span>
+        <span className="popup-info">
+          아직 회원가입 승인이
+          <br />
+          완료되지 않았습니다.
+        </span>
         <div className="popup-btn-wrap">
           {props.type === "confirm" ? (
             <button
