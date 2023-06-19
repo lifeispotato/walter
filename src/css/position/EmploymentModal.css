@@ -1,0 +1,143 @@
+.employment-popup-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.employment-popup-wrap {
+  width: 710px;
+  height: auto;
+  /* height: 1211px; */
+  padding: 40px;
+  background: #ffffff;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  position: relative;
+}
+
+.employment-popup-title {
+  margin-bottom: 10px;
+}
+
+.popup-company-name {
+  margin-bottom: 30px;
+}
+
+.popup-company-name-title {
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.close-employment-popup {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+}
+
+.popup-comany-content-container {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fafafa;
+  border-radius: 5px;
+  margin-bottom: 40px;
+}
+
+.popup-comany-content-container h2 {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+  color: #282828;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.employment-popup-divider {
+  margin: 30px 0px;
+  border-top: 1px solid #d9d9d9;
+}
+
+.popup-stack-title {
+  display: inline-block;
+  font-weight: 600;
+  color: #282828;
+  margin-right: 30px;
+}
+
+.comany-popup-stack-wrap > div {
+  margin-bottom: 20px;
+}
+
+.comany-popup-stack-wrap div:last-child {
+  margin-bottom: 0px;
+}
+
+.popup-stack-text {
+  color: #282828;
+}
+
+.interest-stack-container {
+  display: flex;
+}
+
+.interest-stack-container div {
+  background: #fffae9;
+  border: 1px solid #ffc400;
+  border-radius: 50px;
+  padding: 5px 15px;
+  box-sizing: border-box;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.interest-stack-container div span {
+  font-weight: 600;
+  color: #ffc400;
+}
+
+.employment-popup-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employment-scrap-container {
+  padding: 7px 15px;
+  background: #ffffff;
+  gap: 5px;
+  border: 1px solid #ffc400;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.employment-apply-container {
+  width: 127px;
+  height: 39px;
+  background: #ffc400;
+  border: 1px solid #ffc400;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.employment-apply-container span {
+  font-weight: 600;
+  color: #ffffff;
+}

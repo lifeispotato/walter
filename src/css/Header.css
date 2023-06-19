@@ -1,9 +1,5 @@
 .header-container {
   box-sizing: border-box;
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
   width: 100%;
   height: 85px;
   background: #ffffff;

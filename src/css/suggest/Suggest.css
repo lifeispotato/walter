@@ -1,0 +1,29 @@
+.suggest-title-container {
+  background-image: url(/public/img/suggest-bg.png);
+}
+
+.suggest-navbar {
+  height: 98px;
+}
+
+.suggest-detail-navbar {
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.suggest-detail-navbar > a {
+  margin-right: 40px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.suggest-detail-navbar > a > span {
+  color: #939393;
+  font-weight: 600;
+  cursor: pointer;
+}

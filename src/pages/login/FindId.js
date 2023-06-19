@@ -11,10 +11,10 @@ const FindId = () => {
     AuthenticationNumber: null,
   });
 
+  const [alertMsg, setAlertMsg] = useState("");
+  const [isOpen, setIsOpen] = useState(false);
   const [loginErrorMsg, setLoginErrorMsg] = useState(false);
   const [authenticationErrorMsg, setAuthenticationErrorMsg] = useState(false);
-
-  const [isOpen, setIsOpen] = useState(false);
 
   const AuthenticationNumberSend = () => {
     try {
@@ -23,7 +23,8 @@ const FindId = () => {
         return;
       }
       if (!reg.test(findIdInfo.email)) {
-        alert("올바른 이메일 형식이 아닙니다.");
+        setAlertMsg("올바른 이메일 형식이 아닙니다.");
+        setIsOpen(true);
         return;
       }
     } catch (error) {}
@@ -118,6 +119,14 @@ const FindId = () => {
           다음
         </button>
       </div>
+      {isOpen ? (
+        <Popup
+          msg={<span>{alertMsg}</span>}
+          type={"alert"}
+          isOpen={isOpen}
+          setIsOpen={setIsOpen}
+        />
+      ) : null}
     </div>
   );
 };

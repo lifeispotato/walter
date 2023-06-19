@@ -9,16 +9,15 @@ const Popup = (props) => {
   return (
     <div className="popup-container">
       <div className="popup-wrap">
-        <span className="popup-info">
-          아직 회원가입 승인이
-          <br />
-          완료되지 않았습니다.
-        </span>
+        <span className="popup-info">{props.msg}</span>
         <div className="popup-btn-wrap">
           {props.type === "confirm" ? (
             <button
               className="popup-btn-cancel"
-              onClick={() => props.setIsOpen(false)}
+              onClick={() => {
+                props.setIsOpen(false);
+                props.setCancelCheck(true);
+              }}
             >
               취소
             </button>
@@ -26,7 +25,10 @@ const Popup = (props) => {
 
           <button
             className="popup-btn-check"
-            onClick={() => props.setIsOpen(false)}
+            onClick={() => {
+              props.setIsOpen(false);
+              props.setSaveCheck(true);
+            }}
           >
             확인
           </button>
