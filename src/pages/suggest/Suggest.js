@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "../../css/suggest/Suggest.css";
 import "../../css/walter.css";
 import MyDocument from "./MyDocument";
+import EmploymentProgress from "./EmploymentProgress";
 
 const Suggest = () => {
   const [navbar, setNavbar] = useState(1);
@@ -39,7 +40,7 @@ const Suggest = () => {
           </a>
         </div>
       </div>
-      <MyDocument />
+      {navbar === 1 ? <MyDocument /> : <EmploymentProgress />}
     </div>
   );
 };

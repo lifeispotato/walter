@@ -29,7 +29,7 @@ h1 {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
-  color: #25282b;
+  color: #282828;
 }
 
 button {
@@ -64,6 +64,75 @@ input::-webkit-inner-spin-button {
   margin-bottom: 20px;
   box-sizing: border-box;
   padding: 13px 17px;
+}
+
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type="date"]::-webkit-cal {
+  content: attr(data-placeholder);
+  width: 100%;
+}
+
+input[type="date"]:invalid::-webkit-datetime-edit {
+  color: #c0c0c0;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  background: url(/public/img/checkbox-ico.svg) center center no-repeat;
+  vertical-align: text-bottom;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  margin: 0 5px 0 0;
+}
+
+.checkbox-container {
+  margin-bottom: 38px;
+}
+
+.radio-container {
+  margin-bottom: 10px;
+}
+
+.radio-container:last-of-type {
+  margin-bottom: 36px;
+}
+
+input[type="checkbox"]:checked {
+  background: url(/public/img/checkbox.svg) center center no-repeat;
+  border: 1px solid #ffc400;
+}
+
+input[type="radio"] {
+  appearance: none;
+  vertical-align: text-bottom;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+  margin: 0 5px 0 0;
+}
+
+input[type="radio"]:checked {
+  background-color: #ffc400;
+  border: 4px solid #ffffff;
+  outline: 1px solid #ffc400;
 }
 
 .title-container {
@@ -113,6 +182,14 @@ input:focus {
   color: #282828;
 }
 
+input[type="checkbox"]:focus {
+  outline: none;
+}
+
+input[type="radio"]:focus {
+  outline: 1px solid #ffc400;
+}
+
 input::placeholder {
   font-family: "Pretendard";
   font-style: normal;
@@ -143,6 +220,11 @@ input::placeholder {
 .form-title::after {
   content: "*";
   color: #ffc400;
+}
+
+.form-title-choice::after {
+  content: "(선택)";
+  color: #939393;
 }
 
 input:disabled {
@@ -187,4 +269,21 @@ input:disabled {
 
 .Toastify__close-button {
   display: none;
+}
+
+.item-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 5px 15px;
+  background: #fffae9;
+  border: 1px solid #ffc400;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffc400;
+  margin-right: 10px;
 }

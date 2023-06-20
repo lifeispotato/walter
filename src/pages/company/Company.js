@@ -9,7 +9,10 @@ const Company = () => {
     <div className="walter-container">
       <section className="company-header-container">
         <div className="company-header">
-          <img className="company-profile-img" src="/img/company-img.png" />
+          <img
+            className="company-detail-profile-img"
+            src="/img/company-img.png"
+          />
         </div>
       </section>
       <section className="company-body-container">

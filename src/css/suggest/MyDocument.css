@@ -200,3 +200,76 @@
   border: 1px solid #ffc400;
   color: #ffffff;
 }
+
+.career-period {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.career-start-date-container {
+  width: 205px;
+}
+
+.career-start-date,
+.career-end-date {
+  width: 205px;
+  height: 51px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 13px 20px 13px 17px;
+  background: url(/public/img/date-ico.svg) 164px center no-repeat;
+}
+
+.career-start-date-container span,
+.career-end-date-container span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.career-start-date-container > div,
+.career-end-date-container > div {
+  position: relative;
+}
+
+.date-calender-icon {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+}
+
+.career-end-date-container {
+  width: 205px;
+  height: 51px;
+}
+
+.date-line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -25px);
+}
+
+.career-add-btn {
+  width: 65px;
+  height: 31px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffc400;
+  border: 1px solid #ffc400;
+  border-radius: 8px;
+}
+
+.checkbox-container-career {
+  margin-bottom: 20px;
+}
+
+.career-add-btn span {
+  color: #ffffff;
+}
