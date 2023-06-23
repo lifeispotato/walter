@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../../css/login/Login.css";
 import "../../css/walter.css";
 import Popup from "../../component/Popup";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [loginInfo, setLoginInfo] = useState({
     id: null,
     password: null,
@@ -64,9 +66,13 @@ const Login = () => {
           />
         </div>
         <div className="find-id-pwd">
-          <span className="cursor-pointer">아이디찾기</span>
+          <span className="cursor-pointer" onClick={() => navigate("/find-id")}>
+            아이디찾기
+          </span>
           <span className="divider">ㅣ</span>
-          <span className="cursor-pointer">비밀번호찾기</span>
+          <span className="cursor-pointer" onClick={() => navigate("/find-pw")}>
+            비밀번호찾기
+          </span>
         </div>
         <button
           className={`walter-btn ${
@@ -78,7 +84,7 @@ const Login = () => {
         </button>
         <div className="go-join cursor-pointer">
           <span>아직 회원이 아닌가요?</span>
-          <u>회원가입하기</u>
+          <u onClick={() => navigate("/join")}>회원가입하기</u>
         </div>
       </div>
 

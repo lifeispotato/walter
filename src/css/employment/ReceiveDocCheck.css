@@ -1,0 +1,48 @@
+.employment-receive-container {
+  width: 100%;
+  height: 235px;
+  background: var(--gray-07, #fafafa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employment-receive-title-container {
+  width: 1170px;
+}
+
+.employment-receive-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.employment-receive-title span {
+  font-weight: 600;
+}
+
+.employment-receive-title span:first-of-type {
+  color: #939393;
+}
+.employment-receive-title span:nth-of-type(2) {
+  color: #d9d9d9;
+}
+.employment-receive-title span:nth-of-type(3) {
+  color: #282828;
+}
+.employment-receive-title-date span:first-child {
+  color: #ffc400;
+  margin-right: 10px;
+}
+.employment-receive-title-date span:nth-child(2) {
+  color: #c0c0c0;
+  font-weight: 400;
+}
+
+.employment-receive-info {
+  display: flex;
+  width: 1170px;
+  flex-wrap: wrap;
+  margin: 80px 0;
+}

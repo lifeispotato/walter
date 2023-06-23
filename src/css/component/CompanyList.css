@@ -9,11 +9,29 @@
   display: flex;
 }
 
+.company-info-container-mypage {
+  width: 710px;
+  min-height: 364px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
 .company-profile-container {
   position: relative;
   width: 585px;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.company-profile-container-mypage {
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 710px;
 }
 
 .company-video-container {

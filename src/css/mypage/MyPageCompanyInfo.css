@@ -1,0 +1,80 @@
+.com-account-info-container {
+  width: 430px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+}
+
+.com-account-info-img {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.com-account-info-img .profile-edit-btn {
+  position: absolute;
+  bottom: 8px;
+  right: 3px;
+}
+
+.com-account-info-name {
+  margin-bottom: 40px;
+}
+
+.com-account-info-name span {
+  font-weight: 600;
+}
+
+.com-account-info-input > span {
+  color: #282828;
+}
+
+.com-account-info-input {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.com-account-info-input input {
+  margin-bottom: 30px;
+}
+
+.com-account-edit-btn {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.com-account-edit-btn button {
+  box-sizing: border-box;
+  padding: 7px 20px;
+  border-radius: 8px;
+}
+
+.com-account-edit-btn-cancel {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+}
+
+.com-account-edit-btn-cancel span {
+  color: #282828;
+}
+
+.com-account-edit-btn-complete {
+  background: #ffc400;
+  border: 1px solid #ffc400;
+}
+
+.com-account-edit-btn-complete span {
+  color: #ffffff;
+}
+
+.com-account-info-input textarea {
+  height: 128px;
+  margin-bottom: 30px;
+}

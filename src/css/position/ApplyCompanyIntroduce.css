@@ -1,0 +1,71 @@
+.apply-step3-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.apply-step3-title {
+  margin-bottom: 10px;
+}
+
+.apply-step3-title .form-title {
+  color: #282828;
+}
+
+.apply-step3-title > span:nth-child(2) {
+  color: #939393;
+}
+
+.intro-link-container {
+  position: relative;
+}
+
+.intro-link-add-btn {
+  width: 65px;
+  height: 31px;
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  background: #ffc400;
+  border: 1px solid #ffc400;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  /* transform: translateY(-50%); */
+}
+
+.intro-upload-input {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.intro-upload-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 127px;
+  height: 51px;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.intro-upload-label img {
+  margin-right: 3px;
+}
+
+.intro-upload-label span {
+  color: #282828;
+}
+
+.intro-textarea {
+  width: 430px;
+  height: 430px;
+}

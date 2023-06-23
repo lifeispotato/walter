@@ -1,0 +1,95 @@
+.ask-list-container {
+  width: 100%;
+}
+
+.ask-list-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.ask-list-number span {
+  color: #939393;
+}
+
+.ask-list-table {
+  width: 100%;
+}
+
+.ask-list-table table {
+  width: 100%;
+  border-top: 1px solid #c0c0c0;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+
+.ask-list-table table thead tr {
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #939393;
+  box-sizing: border-box;
+}
+
+.ask-list-table table thead tr th {
+  font-weight: 600;
+  color: #282828;
+}
+
+.ask-list-table table tbody {
+  border-top: 1px solid #939393;
+  border-bottom: 1px solid #939393;
+}
+
+.ask-list-table table tbody tr {
+  border-bottom: 1px solid #d9d9d9;
+  box-sizing: border-box;
+  height: 65px;
+}
+
+.ask-table-title {
+  width: 424px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.ask-table-date {
+  width: 84px;
+  text-align: center;
+  padding-right: 89px;
+}
+
+.ask-table-state {
+  width: 73px;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.ask-table-state div {
+  padding: 5px 12px;
+  margin: 0;
+}
+
+.ask-list-table table tbody tr .ask-table-date {
+  color: #939393;
+}
+
+.ask-btn-container {
+  width: 100%;
+  height: 39px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ask-btn {
+  width: 96px;
+  height: 39px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #282828;
+}

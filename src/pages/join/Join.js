@@ -1,87 +1,83 @@
+import { useNavigate } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import "../../css/join/Join.css";
 import "../../css/walter.css";
-import Popup from "../../component/Popup";
+import "../../css/join/Join.css";
 
 const Join = () => {
-  const [loginInfo, setLoginInfo] = useState({
-    id: null,
-    password: null,
-  });
-
-  const [isOpen, setIsOpen] = useState(false);
-
-  const reg =
-    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,16}$/;
-
-  const login = async () => {
-    try {
-      if (!loginInfo.id) {
-        alert("아이디를 입력해주세요.");
-        return;
-      }
-      if (!loginInfo.password) {
-        alert("비밀번호를 입력해주세요.");
-        return;
-      }
-      if (!reg.test(loginInfo.password)) {
-        setIsOpen(true);
-        return;
-      }
-    } catch (error) {}
-  };
+  const navigate = useNavigate();
+  const [joinType, setJoinType] = useState(null);
 
   return (
-    <div className="login-container">
-      <div className="login-wrap">
-        <h1>로그인</h1>
-        <div className="login-input-container">
-          <input
-            type="text"
-            required
-            placeholder="아이디를 입력하세요."
-            onChange={(e) => {
-              console.log(123);
-              setLoginInfo((loginInfo) => ({
-                ...loginInfo,
-                id: e.target.value,
-              }));
-            }}
-          />
-          <input
-            type="password"
-            required
-            placeholder="비밀번호를 입력하세요."
-            onChange={(e) => {
-              console.log(123);
-              setLoginInfo((loginInfo) => ({
-                ...loginInfo,
-                password: e.target.value,
-              }));
-            }}
-          />
+    <div className="join-container">
+      <div className="join-wrap">
+        <div className="join-title-container">
+          <h1>회원가입</h1>
+          <span className="body-rgular-16-25">
+            어떤 유형의 회원으로 가입하시나요?
+          </span>
         </div>
-        <div className="find-id-pwd">
-          <span className="cursor-pointer">아이디찾기</span>
-          <span className="divider">ㅣ</span>
-          <span className="cursor-pointer">비밀번호찾기</span>
+        <div className="join-type-container">
+          <div
+            className={`join-type-dev ${
+              joinType === 1 ? "join-type-active" : ""
+            }`}
+            onClick={() => setJoinType(1)}
+          >
+            <img
+              src={
+                joinType === 1
+                  ? "/img/join-check-active.svg"
+                  : "/img/join-check.svg"
+              }
+            />
+            <div className="join-type-content">
+              <span className="body-rgular-16-25">개발자로 가입할래요.</span>
+              <span className="body-rgular-16-25">
+                채용 공고를 확인하고 지원할 수 있어요.
+              </span>
+            </div>
+          </div>
+          <div
+            className={`join-type-company ${
+              joinType === 2 ? "join-type-active" : ""
+            }`}
+            onClick={() => setJoinType(2)}
+          >
+            <img
+              src={
+                joinType === 2
+                  ? "/img/join-check-active.svg"
+                  : "/img/join-check.svg"
+              }
+            />
+            <div className="join-type-content">
+              <span className="body-rgular-16-25">
+                스타트업으로 가입할래요.
+              </span>
+              <span className="body-rgular-16-25">
+                채용 공고를 올리고 개발자를 채용할 수 있어요.
+              </span>
+            </div>
+          </div>
         </div>
-        <button
-          className={`login-btn ${
-            loginInfo.id && loginInfo.password ? "login-active" : null
-          }`}
-          onClick={login}
-        >
-          로그인
-        </button>
-        <div className="go-join cursor-pointer">
-          <span>아직 회원이 아닌가요?</span>
-          <u>회원가입하기</u>
+        <div>
+          <button
+            className={`walter-btn ${joinType ? "walter-btn-active" : ""}`}
+            onClick={() => {
+              if (joinType === 1) {
+                navigate("/join/developer");
+                return;
+              }
+              if (joinType === 2) {
+                navigate("/join/startup");
+                return;
+              }
+            }}
+          >
+            다음
+          </button>
         </div>
       </div>
-      {isOpen ? (
-        <Popup type={"confirm"} isOpen={isOpen} setIsOpen={setIsOpen} />
-      ) : null}
     </div>
   );
 };

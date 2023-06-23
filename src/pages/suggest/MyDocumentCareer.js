@@ -128,88 +128,96 @@ const MyDocumentCareer = () => {
                 예
               </label>
             </div>
-            <span className=" body-rgular-16-25 form-title">상태</span>
-            <div className="radio-container">
-              <input type="radio" name="education-state" id="enrolled" />
-              <label className="body-rgular-14-22" htmlFor="enrolled">
-                재학
-              </label>
-            </div>
-            <div className="radio-container">
-              <input
-                type="radio"
-                name="education-state"
-                id="leave-of-absence"
-              />
-              <label className="body-rgular-14-22" htmlFor="leave-of-absence">
-                휴학
-              </label>
-            </div>
-            <div className="radio-container">
-              <input type="radio" name="education-state" id="graduated" />
-              <label className="body-rgular-14-22" htmlFor="graduated">
-                졸업
-              </label>
-            </div>
-            <div className="radio-container">
-              <input
-                type="radio"
-                name="education-state"
-                id="expected-graduation"
-              />
-              <label
-                className="body-rgular-14-22"
-                htmlFor="expected-graduation"
-              >
-                졸업예정
-              </label>
-            </div>
-            <div className="radio-container">
-              <input type="radio" name="education-state" id="withdrawn" />
-              <label className="body-rgular-14-22" htmlFor="withdrawn">
-                중퇴
-              </label>
+            <div className="doc-radio-container">
+              <span className=" body-rgular-16-25 form-title">상태</span>
+              <div className="radio-container">
+                <input type="radio" name="education-state" id="enrolled" />
+                <label className="body-rgular-14-22" htmlFor="enrolled">
+                  재학
+                </label>
+              </div>
+              <div className="radio-container">
+                <input
+                  type="radio"
+                  name="education-state"
+                  id="leave-of-absence"
+                />
+                <label className="body-rgular-14-22" htmlFor="leave-of-absence">
+                  휴학
+                </label>
+              </div>
+              <div className="radio-container">
+                <input type="radio" name="education-state" id="graduated" />
+                <label className="body-rgular-14-22" htmlFor="graduated">
+                  졸업
+                </label>
+              </div>
+              <div className="radio-container">
+                <input
+                  type="radio"
+                  name="education-state"
+                  id="expected-graduation"
+                />
+                <label
+                  className="body-rgular-14-22"
+                  htmlFor="expected-graduation"
+                >
+                  졸업예정
+                </label>
+              </div>
+              <div className="radio-container">
+                <input type="radio" name="education-state" id="withdrawn" />
+                <label className="body-rgular-14-22" htmlFor="withdrawn">
+                  중퇴
+                </label>
+              </div>
             </div>
             <span className="body-rgular-16-25 form-title-choice">경력</span>
-            <span className="body-rgular-16-25 form-title">회사명</span>
-            <input
-              className="walter-input"
-              type="text"
-              value={"길동브라더스"}
-            />
-            <span className="body-rgular-16-25 form-title">포지션</span>
-            <input className="walter-input" type="text" value={"프론트엔드"} />
-            <div className="career-period">
-              <div className="career-start-date-container">
-                <span className="form-title">시작일</span>
-                <div>
-                  <input
-                    className="career-start-date"
-                    data-placeholder="YYYY-MM-DD"
-                    type="date"
-                  />
+            <div className="doc-career-container">
+              <span className="body-rgular-16-25 form-title">회사명</span>
+              <input
+                className="walter-input"
+                type="text"
+                value={"길동브라더스"}
+              />
+              <span className="body-rgular-16-25 form-title">포지션</span>
+              <input
+                className="walter-input"
+                type="text"
+                value={"프론트엔드"}
+              />
+              <div className="career-period">
+                <div className="career-start-date-container">
+                  <span className="form-title">시작일</span>
+                  <div>
+                    <input
+                      className="career-start-date"
+                      data-placeholder="YYYY-MM-DD"
+                      type="date"
+                    />
+                  </div>
+                </div>
+                <img className="date-line" src="/img/date-line.svg" />
+                <div className="career-end-date-container">
+                  <span className="form-title">종료일</span>
+                  <div>
+                    <input
+                      className="career-end-date"
+                      data-placeholder="YYYY-MM-DD"
+                      type="date"
+                    />
+                  </div>
                 </div>
               </div>
-              <img className="date-line" src="/img/date-line.svg" />
-              <div className="career-end-date-container">
-                <span className="form-title">종료일</span>
-                <div>
-                  <input
-                    className="career-end-date"
-                    data-placeholder="YYYY-MM-DD"
-                    type="date"
-                  />
-                </div>
+              <div className="checkbox-container-career">
+                <input type="checkbox" id="major-checkbox" />
+                <label
+                  className="walter-checkbox checkbox-major"
+                  htmlFor="major-checkbox"
+                >
+                  현재 재직중
+                </label>
               </div>
-            </div>
-            <div className="checkbox-container-career">
-              <input type="checkbox" id="major-checkbox" />
-              <label
-                className="walter-checkbox checkbox-major"
-                htmlFor="major-checkbox"
-              >
-                현재 재직중
-              </label>
             </div>
             <button className="career-add-btn">
               <span className="body-rgular-14-22">추가</span>

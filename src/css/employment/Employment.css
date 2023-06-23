@@ -1,0 +1,33 @@
+.employment-title-container {
+  background-image: url(/public/img/employment-bg.png);
+}
+
+.employment-navbar {
+  width: 100%;
+  height: 98px;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  justify-content: center;
+}
+
+.employment-detail-navbar {
+  width: 1170px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.employment-detail-navbar > a {
+  margin-right: 40px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.employment-detail-navbar > a > span {
+  color: #939393;
+  font-weight: 600;
+  cursor: pointer;
+}

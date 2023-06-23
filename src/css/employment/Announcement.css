@@ -1,0 +1,94 @@
+.announcement-container {
+  margin: 80px 0px;
+  width: 765px;
+  height: auto;
+  border-radius: 10px;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-wrap {
+  width: 430px;
+  height: auto;
+  margin-top: 45px;
+  margin-bottom: 40px;
+}
+
+.announcement-registration-title {
+  margin-bottom: 50px;
+}
+
+.announcement-registration-title h1 {
+  margin-bottom: 10px;
+}
+
+.announcement-registration-input {
+  margin-top: 50px;
+}
+
+.announcement-registration-input > span {
+  color: #282828;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.announcement-registration-input .walter-input {
+  margin-bottom: 30px;
+}
+
+.announcement-registration-input .body-rgular-18-28 {
+  font-weight: 600;
+}
+
+.announcement-textarea-container {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.announcement-textarea-container .body-rgular-18-28 {
+  margin-bottom: 20px;
+}
+
+.announcement-textarea-container > textarea {
+  width: 430px;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.announcement-btn {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.announcement-cancel-btn {
+  border-radius: 8px;
+  border: 1px solid var(--line, #d9d9d9);
+  background: var(--white, #fff);
+  padding: 7px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-registration-btn {
+  border-radius: 8px;
+  border: 1px solid var(--primary, #ffc400);
+  background: var(--primary, #ffc400);
+  padding: 7px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.announcement-registration-btn span {
+  color: #ffffff;
+}

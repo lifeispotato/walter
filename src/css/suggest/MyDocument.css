@@ -235,6 +235,11 @@
   position: relative;
 }
 
+.career-end-date-container > div,
+.career-start-date-container > div {
+  background-color: #ffffff;
+}
+
 .date-calender-icon {
   position: absolute;
   top: 50%;
@@ -272,4 +277,9 @@
 
 .career-add-btn span {
   color: #ffffff;
+}
+
+.doc-radio-container span {
+  display: block;
+  margin-bottom: 10px;
 }

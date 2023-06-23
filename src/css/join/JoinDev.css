@@ -1,0 +1,76 @@
+.join-input-wrap {
+  position: relative;
+}
+
+.join-title-container {
+  margin-top: 85px;
+}
+
+.id-duplication-btn {
+  width: 65px;
+  height: 31px;
+  position: absolute;
+  top: 10px;
+  right: 17px;
+  background: #ffc400;
+  border: 1px solid #ffc400;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  /* transform: translateY(-50%); */
+}
+
+.input-err-msg-authentication {
+  bottom: 20px;
+}
+
+.join-input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.join-input-container input {
+  margin-bottom: 30px;
+}
+
+.join-consent-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.join-consent-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.join-consent-wrap a {
+  text-decoration-line: underline;
+  color: #939393;
+  cursor: pointer;
+}
+
+.join-consent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.join-consent label {
+  color: #282828;
+}
+
+.join-next-step-btn {
+  margin-bottom: 80px;
+}
+
+.join-next-step-btn .walter-btn {
+  margin-bottom: 0;
+}

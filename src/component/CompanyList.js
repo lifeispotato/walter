@@ -2,8 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../css/component/CompanyList.css";
 import "../css/walter.css";
 import EmploymentModal from "../pages/position/EmploymentModal";
+import { useNavigate } from "react-router-dom";
 
 const CompanyList = (props) => {
+  const navigate = useNavigate();
   const [videoFocus, setVideoFocus] = useState(true);
   const [presentationFocus, setPresentationFocus] = useState(false);
   const [employmentModalOpen, setEmploymentModalOpen] = useState(false);
@@ -38,8 +40,20 @@ const CompanyList = (props) => {
     <div className="walter-container">
       {companyList.map((item, index) => {
         return (
-          <div className="company-info-container">
-            <div className="company-profile-container">
+          <div
+            className={
+              props.page === "MyPage"
+                ? "company-info-container-mypage"
+                : "company-info-container"
+            }
+          >
+            <div
+              className={
+                props.page === "MyPage"
+                  ? "company-profile-container-mypage"
+                  : "company-profile-container"
+              }
+            >
               <div className="company-name-container">
                 <img
                   className="company-profile-img"
@@ -90,11 +104,14 @@ const CompanyList = (props) => {
                 </div>
               </div>
               <div className="company-btn-container">
-                <div className="company-scrap-container">
+                <div className="company-scrap-container cursor-pointer">
                   <img src="/img/scrap-fill-ico.svg" />
                   <span className="body-rgular-16-25">스크랩 완료</span>
                 </div>
-                <div className="company-apply-container">
+                <div
+                  className="company-apply-container cursor-pointer"
+                  onClick={() => navigate("/apply/step1")}
+                >
                   <span className="body-rgular-16-25">지원하기</span>
                 </div>
               </div>
@@ -104,43 +121,47 @@ const CompanyList = (props) => {
                 </span>
               </div>
             </div>
-            <div className="company-video-container">
-              <div className="company-video-title-container">
-                <div
-                  className={`cursor-pointer ${
-                    item.videoFocus ? "company-category-active" : ""
-                  }`}
-                  onClick={() => {
-                    let copyData = [...companyList];
-                    copyData[index].videoFocus = true;
-                    copyData[index].presentationFocus = false;
-                    setCompanyList(copyData);
-                    // setVideoFocus(true);
-                    // setPresentationFocus(false);
-                  }}
-                >
-                  <span className="body-rgular-16-25">스타트업 소개영상</span>
+            {props.page === "MyPage" ? (
+              ""
+            ) : (
+              <div className="company-video-container">
+                <div className="company-video-title-container">
+                  <div
+                    className={`cursor-pointer ${
+                      item.videoFocus ? "company-category-active" : ""
+                    }`}
+                    onClick={() => {
+                      let copyData = [...companyList];
+                      copyData[index].videoFocus = true;
+                      copyData[index].presentationFocus = false;
+                      setCompanyList(copyData);
+                      // setVideoFocus(true);
+                      // setPresentationFocus(false);
+                    }}
+                  >
+                    <span className="body-rgular-16-25">스타트업 소개영상</span>
+                  </div>
+                  <div
+                    className={`cursor-pointer ${
+                      item.presentationFocus ? "company-category-active" : ""
+                    }`}
+                    onClick={() => {
+                      let copyData = [...companyList];
+                      copyData[index].videoFocus = false;
+                      copyData[index].presentationFocus = true;
+                      setCompanyList(copyData);
+                      // setVideoFocus(false);
+                      // setPresentationFocus(true);
+                    }}
+                  >
+                    <span className="body-rgular-16-25">채용설명회</span>
+                  </div>
                 </div>
-                <div
-                  className={`cursor-pointer ${
-                    item.presentationFocus ? "company-category-active" : ""
-                  }`}
-                  onClick={() => {
-                    let copyData = [...companyList];
-                    copyData[index].videoFocus = false;
-                    copyData[index].presentationFocus = true;
-                    setCompanyList(copyData);
-                    // setVideoFocus(false);
-                    // setPresentationFocus(true);
-                  }}
-                >
-                  <span className="body-rgular-16-25">채용설명회</span>
+                <div className="company-video-content-container">
+                  {item.videoFocus ? 1 : item.presentationFocus ? 2 : null}
                 </div>
               </div>
-              <div className="company-video-content-container">
-                {item.videoFocus ? 1 : item.presentationFocus ? 2 : null}
-              </div>
-            </div>
+            )}
           </div>
         );
       })}

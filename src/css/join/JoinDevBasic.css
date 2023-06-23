@@ -1,0 +1,9 @@
+.join-wrap .my-document-info-input {
+  margin-bottom: 40px;
+}
+
+.join-progress-bar-doc {
+  width: 100%;
+  position: absolute;
+  top: -1%;
+}

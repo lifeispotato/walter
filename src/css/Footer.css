@@ -23,6 +23,8 @@
   font-size: 15px;
   line-height: 23px;
   color: #383838;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-menu::after {

@@ -1,0 +1,100 @@
+.mypage-container {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+}
+
+.mypage-wrap {
+  width: 1170px;
+  height: auto;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.mypage-wrap > h1 {
+  margin-bottom: 34px;
+}
+
+.mypage-content-container {
+  display: flex;
+  align-items: start;
+  width: 1170px;
+  height: auto;
+  gap: 30px;
+}
+
+.mypage-content-box {
+  width: 370px;
+  min-height: 460px;
+  height: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #fafafa;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  position: relative;
+}
+
+.mypage-content-box img {
+  margin-bottom: 30px;
+}
+
+.mypage-content-detail {
+  width: 770px;
+  height: auto;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+.mypage-member-name {
+  width: 100%;
+  border-bottom: 1px solid #d9d9d9;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.mypage-member-name .body-rgular-18-28 {
+  display: block;
+  font-weight: 600;
+}
+
+.mypage-member-name .body-rgular-16-25 {
+  display: block;
+  color: #939393;
+  margin-bottom: 30px;
+}
+
+.mypage-menu {
+  margin-bottom: 50px;
+}
+
+.mypage-menu a {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.mypage-menu .body-rgular-16-25 {
+  color: #939393;
+  cursor: pointer;
+}
+
+.mypage-menu-active {
+  color: #282828 !important;
+}
+
+.withdraw-btn {
+  /* position: absolute;
+  bottom: 30px;
+  left: 30px; */
+  font-size: 13px;
+  line-height: 20px;
+  text-decoration-line: underline;
+  color: #939393;
+}

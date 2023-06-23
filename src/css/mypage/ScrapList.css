@@ -1,0 +1,14 @@
+.scrap-list-container {
+  width: 100%;
+}
+
+.scrap-list-number {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.scrap-list-number span {
+  color: #939393;
+}

@@ -1,0 +1,29 @@
+.ask-writing-container {
+  width: 100%;
+}
+
+.ask-writing-container h3 {
+  margin-bottom: 30px;
+}
+.ask-writing-title,
+.ask-writing-content {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.ask-writing-title span {
+  color: #282828;
+}
+
+.ask-writing-title .walter-input {
+  width: 710px;
+}
+
+.ask-writing-content {
+  margin-bottom: 30px;
+}
+
+.ask-writing-content .walter-textarea {
+  height: 293px;
+}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -7,9 +8,15 @@ const Footer = () => {
       <div className="footer-wrap">
         <div className="footer-logo-container">
           <img className="footer-logo cursor-pointer" src="/img/logo.svg" />
-          <a className="footer-menu cursor-pointer">이용약관</a>
-          <a className="footer-menu cursor-pointer">개인정보처리방침</a>
-          <a className="footer-menu cursor-pointer">공지사항</a>
+          <Link className="footer-menu" to={"/terms"}>
+            이용약관
+          </Link>
+          <Link className="footer-menu" to={"/privacy-policy"}>
+            개인정보처리방침
+          </Link>
+          <Link className="footer-menu" to={"/notice"}>
+            공지사항
+          </Link>
         </div>
         <div className="footer-divider"></div>
         <div className="footer-company-info">
